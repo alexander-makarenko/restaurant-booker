@@ -1,7 +1,11 @@
 %li
-  = link_to '#' do
+  = link_to new_restaurant_path do
+    %span.glyphicon.glyphicon-plus
+    Add
+%li
+  = link_to restaurants_path do
     %span.glyphicon.glyphicon-cutlery
-    Restaurants
+    List
 %li
   = link_to '#' do
     %span.glyphicon.glyphicon-flag

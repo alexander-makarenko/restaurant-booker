@@ -1,0 +1,21 @@
+%h2.text-center Restaurants
+
+- if @restaurants.any?
+  .table-responsive
+    %table.table.table-bordered.table-hover.text-nowrap
+      %thead
+        %tr
+          %th.text-center Name
+          %th.text-center Capacity
+          %th.text-center Opening Time
+          %th.text-center Closing Time
+          %th.text-center Added On
+          %th.text-center Actions
+      %tbody
+        = render @restaurants
+  .text-center
+    = will_paginate @restaurants
+
+- else
+  %p There are no restaurants to display.
+

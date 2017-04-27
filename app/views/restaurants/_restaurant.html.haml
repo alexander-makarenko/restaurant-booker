@@ -1,0 +1,8 @@
+%tr{ id: "restaurant_#{restaurant.id}" }
+  %td= restaurant.name
+  %td.text-center= restaurant.capacity
+  %td.text-center= restaurant.opens_at.localtime.strftime('%I:%M %p')
+  %td.text-center= restaurant.closes_at.localtime.strftime('%I:%M %p')
+  %td.text-center= restaurant.created_at.localtime.strftime('%b %-d %Y, %I:%M:%S %p')
+  %td.actions.text-center
+    = link_to 'Remove', restaurant_path(restaurant), method: :delete, remote: true

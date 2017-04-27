@@ -1,0 +1,15 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.business-hours {
+  overflow: auto;
+  .opening-time, .closing-time {
+    float: left;
+    width: 50%;
+  }
+  select {
+    float: left;
+    width: 50%;
+  }
+}
